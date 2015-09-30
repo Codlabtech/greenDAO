@@ -156,4 +156,8 @@ public class SqlUtils {
         }
         return "X'" + new String(hexChars) + '\'';
     }
+
+    public static String createSqlCount(String tablename) {
+        return "SELECT COUNT(*) FROM \"" + tablename +'"';
+    }
 }
